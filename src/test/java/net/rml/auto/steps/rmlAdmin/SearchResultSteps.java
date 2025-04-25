@@ -18,8 +18,8 @@ public class SearchResultSteps {
     }
 
     @When("^I go to Search Result Page by url")
-    public void iGoToSRCPageByUrl(){
-
+    public void iGoToSearchResultPageByUrl(){
+        searchResultPage.goToSrpByUrl();
     }
 
 

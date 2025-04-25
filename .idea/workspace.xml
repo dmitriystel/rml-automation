@@ -5,14 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="832a88d4-dcd1-41dc-80b6-985afc916983" name="Changes" comment="testCommit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/website/rml/pages/SearchResultPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/rml/auto/steps/rmlAdmin/SearchResultSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/SearchResultPage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/core/config/PropertiesReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/core/config/RmlConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/core/utils/JsonReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/core/utils/PathUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/soap/OperationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/config/UiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/utils/WebDriverActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/webdriver/Browser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/webdriver/ChromeBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/webdriver/DriverFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/webdriver/DriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/webdriver/DriverType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/enviroment.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rml/auto/website/rml/pages/SearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/website/rml/pages/SearchResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/rml/auto/steps/rmlAdmin/SearchResultSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/rml/auto/steps/rmlAdmin/SearchResultSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,7 +47,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="testBranch" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,6 +64,13 @@
     &quot;accountId&quot;: &quot;28c3154e-1078-4a8a-b289-fd4daf9a201b&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.141.59/e006ffd3aa7841e6e9125d9e6691b3a6b7592b05/selenium-api-3.141.59.jar!/org/openqa/selenium/WebDriver.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.141.59/8735de5049acf0e761defc65ee5837d6541abaf5/selenium-support-3.141.59.jar!/org/openqa/selenium/support/ui/WebDriverWait.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -62,24 +82,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.rml-automation [:net.rml.auto.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.rml-automation [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cns/IdeaProjects/rml-automation/src/test/java&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/cns/IdeaProjects/rml-automation/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Scenario: 1 - SRP. Check pagination without the total number of used vehicles..executor": "Run",
+    "Gradle.Build rml-automation.executor": "Run",
+    "Gradle.rml-automation [:net.rml.auto.Main.main()].executor": "Run",
+    "Gradle.rml-automation [:org.example.Main.main()].executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "srp-pagination",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/cns/IdeaProjects/rml-automation/src/test/java",
+    "onboarding.tips.debug.path": "C:/Users/cns/IdeaProjects/rml-automation/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\test\java" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\main\java\net\rml\auto\soap" />
+      <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\main\java\net\rml\auto\ui\utils" />
+      <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\main\resources" />
+      <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\main\java\net\rml\auto\core\utils" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.net.rml.auto.Main">
+  <component name="RunManager" selected="Cucumber Java.Scenario: 1 - SRP. Check pagination without the total number of used vehicles.">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="rml-automation.main" />
@@ -106,8 +134,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: 1 - SRP. Check pagination without the total number of used vehicles." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchResultPage.feature" />
+      <option name="GLUE" value="net.rml.auto.steps.rmlAdmin" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="rml-automation.test" />
+      <option name="NAME_FILTER" value="^1 \- SRP\. Check pagination without the total number of used vehicles\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^1 \- SRP\. Check pagination without the total number of used vehicles\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: 1 - SRP. Check pagination without the total number of used vehicles." />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: 1 - SRP. Check pagination without the total number of used vehicles." />
         <item itemvalue="Application.net.rml.auto.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -122,6 +171,41 @@
       <option name="presentableId" value="Default" />
       <updated>1744696989323</updated>
     </task>
+    <task id="LOCAL-00001" summary="testCommit">
+      <option name="closed" value="true" />
+      <created>1744961327628</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744961327628</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="testCommit" />
+    <option name="LAST_COMMIT_MESSAGE" value="testCommit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/rml/auto/website/rml/pages/SearchResultPage.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/rml/auto/ui/pages/BasePage.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/net/rml/auto/ui/pages/BasePage.java</url>
+          <line>13</line>
+          <properties field="webDriver" class="net.rml.auto.ui.pages.BasePage" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
