@@ -5,25 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="832a88d4-dcd1-41dc-80b6-985afc916983" name="Changes" comment="adding tc 1 - SRP. Check pagination without the total number of used vehicles.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/core/utils/UrlXmlParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/website/rml/pages/AdminCommonPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/website/rml/pages/VehicleDetailsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/rml/auto/hooks/TestHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/rml/auto/runner/IndividualScenarioRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/rml/auto/runner/RunCucumberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/rml/auto/steps/rmlAdmin/AdminCommonSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/rml/auto/steps/rmlAdmin/VehicleDetailsSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/srpUrlsProductionSites.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/context/TestContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/pagination/AllPaginationWithAllUrls.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rml/auto/core/utils/UrlXmlParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/utils/WebDriverActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/utils/WebDriverActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/webdriver/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/ui/webdriver/DriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rml/auto/website/rml/pages/SearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rml/auto/website/rml/pages/SearchResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/rml/auto/runner/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/rml/auto/runner/RunCucumberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/rml/auto/steps/rmlAdmin/SearchResultSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/rml/auto/steps/rmlAdmin/SearchResultSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SearchResultPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SearchResultPage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SearchResultPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/pagination/AllPaginationWithOneUrl.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/srpUrlsProductionSites.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,38 +85,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: SearchResultPage.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: 1 - SRP. Check pagination without the total number of used vehicles..executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build rml-automation.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.IndividualScenarioRunner.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RunCucumberTest.dummyTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RunCucumberTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RunCukesTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.rml-automation [:net.rml.auto.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.rml-automation [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/cns/IdeaProjects/rml-automation/src/test/resources/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#2 on srp-pagination&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cns/IdeaProjects/rml-automation/src/test/resources/testng.xml&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/cns/IdeaProjects/rml-automation/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: AllPaginationWithAllUrls.executor": "Run",
+    "Cucumber Java.Feature: SearchResultPage.executor": "Run",
+    "Cucumber Java.Scenario: 1 - SRP. Check all pagination without the total number of used vehicles..executor": "Run",
+    "Cucumber Java.Scenario: 1 - SRP. Check pagination without the total number of used vehicles..executor": "Run",
+    "Cucumber Java.Scenario: SRP. Check pagination and vehicle details for each site.executor": "Run",
+    "Gradle.Build rml-automation.executor": "Run",
+    "Gradle.IndividualScenarioRunner.executor": "Run",
+    "Gradle.RunCucumberTest.dummyTest.executor": "Run",
+    "Gradle.RunCucumberTest.executor": "Run",
+    "Gradle.RunCukesTest.executor": "Run",
+    "Gradle.rml-automation [:net.rml.auto.Main.main()].executor": "Run",
+    "Gradle.rml-automation [:org.example.Main.main()].executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/cns/IdeaProjects/rml-automation/src/test/resources/testng.xml.executor": "Run",
+    "git-widget-placeholder": "first-test",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/cns/IdeaProjects/rml-automation/src/test/resources/testng.xml",
+    "onboarding.tips.debug.path": "C:/Users/cns/IdeaProjects/rml-automation/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\test\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\test\resources\features\pagination" />
       <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\main\java\net\rml\auto\soap" />
       <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\main\java\net\rml\auto\ui\utils" />
       <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\main\resources" />
       <recent name="C:\Users\cns\IdeaProjects\rml-automation\src\main\java\net\rml\auto\core\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: SearchResultPage">
+  <component name="RunManager" selected="Cucumber Java.Scenario: 1 - SRP. Check all pagination without the total number of used vehicles.">
+    <configuration name="Feature: AllPaginationWithAllUrls" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/pagination/AllPaginationWithAllUrls.feature" />
+      <option name="GLUE" value="net.rml.auto.hooks net.rml.auto.steps.rmlAdmin" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="rml-automation.test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: AllPaginationWithAllUrls" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: SearchResultPage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchResultPage.feature" />
@@ -143,16 +159,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: 1 - SRP. Check pagination without the total number of used vehicles." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: 1 - SRP. Check all pagination without the total number of used vehicles." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchResultPage.feature" />
-      <option name="GLUE" value="net.rml.auto.steps.rmlAdmin" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/pagination/AllPaginationWithOneUrl.feature" />
+      <option name="GLUE" value="net.rml.auto.hooks net.rml.auto.steps.rmlAdmin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="rml-automation.test" />
-      <option name="NAME_FILTER" value="^1 \- SRP\. Check pagination without the total number of used vehicles\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^1 \- SRP\. Check pagination without the total number of used vehicles\.$&quot;" />
-      <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Scenario: 1 - SRP. Check pagination without the total number of used vehicles." />
+      <option name="NAME_FILTER" value="^1 \- SRP\. Check all pagination without the total number of used vehicles\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^1 \- SRP\. Check all pagination without the total number of used vehicles\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: 1 - SRP. Check all pagination without the total number of used vehicles." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -164,53 +179,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndividualScenarioRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;net.rml.auto.runner.IndividualScenarioRunner&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RunCucumberTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;net.rml.auto.runner.RunCucumberTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="Scenario: SRP. Check pagination and vehicle details for each site" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/pagination/AllPaginationWithAllUrls.feature" />
+      <option name="GLUE" value="net.rml.auto.hooks net.rml.auto.steps.rmlAdmin" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="rml-automation.test" />
+      <option name="NAME_FILTER" value="^SRP\. Check pagination and vehicle details for each site$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^SRP\. Check pagination and vehicle details for each site$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: SRP. Check pagination and vehicle details for each site" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="C:/Users/cns/IdeaProjects/rml-automation/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="rml-automation.test" />
@@ -240,20 +227,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Feature: AllPaginationWithAllUrls" />
+      <item itemvalue="Cucumber Java.Scenario: 1 - SRP. Check all pagination without the total number of used vehicles." />
+      <item itemvalue="Cucumber Java.Scenario: SRP. Check pagination and vehicle details for each site" />
       <item itemvalue="Cucumber Java.Feature: SearchResultPage" />
-      <item itemvalue="Cucumber Java.Scenario: 1 - SRP. Check pagination without the total number of used vehicles." />
-      <item itemvalue="Gradle.IndividualScenarioRunner" />
-      <item itemvalue="Gradle.RunCucumberTest" />
       <item itemvalue="TestNG.RunCucumberWithTestNG" />
       <item itemvalue="TestNG.C:/Users/cns/IdeaProjects/rml-automation/src/test/resources/testng.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: SearchResultPage" />
-        <item itemvalue="Gradle.IndividualScenarioRunner" />
-        <item itemvalue="Cucumber Java.Scenario: 1 - SRP. Check pagination without the total number of used vehicles." />
-        <item itemvalue="Gradle.RunCucumberTest" />
+        <item itemvalue="Cucumber Java.Scenario: 1 - SRP. Check all pagination without the total number of used vehicles." />
+        <item itemvalue="Cucumber Java.Scenario: SRP. Check pagination and vehicle details for each site" />
         <item itemvalue="TestNG.C:/Users/cns/IdeaProjects/rml-automation/src/test/resources/testng.xml" />
+        <item itemvalue="Cucumber Java.Feature: AllPaginationWithAllUrls" />
+        <item itemvalue="Cucumber Java.Feature: SearchResultPage" />
       </list>
     </recent_temporary>
   </component>
@@ -284,6 +271,17 @@
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="testCommit" />

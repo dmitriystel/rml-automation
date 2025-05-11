@@ -43,9 +43,9 @@ public class SearchResultPage extends BasePage {
         }
     }
 
-    public void goToSearchResultPageByUrl() {
-        WebDriverActions.goToURL("https://www.uppervalleyhonda.com/search-result-page/used-vehicles?page=1");
-        waitForLoad();
+    public void goToSearchResultPageByUrl(final String url) {
+        WebDriverActions.goToURL(url);
+//        waitForLoad();
     }
 
     public void openFirstVehicleDetailsPage() {
