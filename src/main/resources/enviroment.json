@@ -1,0 +1,421 @@
+{
+  "idtpay_qa": {
+    "Services": {
+      "Vault": "https://ipay.awsqa.idt.net/payinfo.asmx",
+      "Trans": "https://ipay.awsqa.idt.net/transactions.asmx",
+      "Trans_3ds": "https://ipay.awsqa.idt.net/transactions_3ds.asmx",
+      "Settle": "https://ipay.awsqa.idt.net/WebApiSettle.asmx",
+      "WebApi": "https://ipay.awsqa.idt.net/WebApiReference"
+    },
+    "CardValidator": {
+      "ServiceUrl": "https://antifraudqa.idt.net/beast/cardvalidator/cv.svc",
+      "isWrapped": false
+    },
+    "MONGO_DB": {
+      "ServerHost": "idtpayqa1.idt.net:27017,idtpayqa2.idt.net:27017,idtpayqa3.idt.net:27017,idtpayqa4.idt.net:27017",
+      "Port": "27017",
+      "User": "ipaydb_rw",
+      "ReplicaSetName": "idtpayqa",
+      "Source": "admin",
+      "DataBaseName": "ipaydb",
+      "Type": "MONGO",
+      "AdvancedOptions": "admin?authSource=admin&readPreference=primary&tls=true&tlsInsecure=true&replicaSet=idtpayqa&compressors=zstd,zlib,snappy"
+    },
+    "TOKEN_MONGO_DB": {
+      "ServerHost": "idt-token-qa1.idt.net:27017,idt-token-qa2.idt.net:27017,idt-token-qa3.idt.net:27017",
+      "Port": "27017",
+      "User": "tokensqa",
+      "ReplicaSetName": "idtpayqa",
+      "Source": "admin",
+      "DataBaseName": "tokensqa",
+      "Type": "MONGO",
+      "AdvancedOptions": "admin?authSource=admin&readPreference=primary&tls=true&tlsAllowInvalidCertificates=true&enableUtf8Validation=false"
+    },
+    "Users": [
+      {
+        "qa": {
+          "Username": "qa",
+          "Password": "qapass",
+          "ServiceId": "4",
+          "MerchantId": "7725299",
+          "MerchantImmediately": "",
+          "CurrencyId": "840",
+          "processorId": "6",
+          "respprocessorid": "6",
+          "responseCode": "000",
+          "Cvv": "123",
+          "DefaultEcommerceId": "ECOMMERCE"
+        },
+        "qauser": {
+          "Username": "qauser",
+          "Password": "qa_user",
+          "ServiceId": "80",
+          "MerchantId": "020594",
+          "CurrencyId": "840",
+          "processorId": "6",
+          "respprocessorid": "6",
+          "responseCode": "000",
+          "DefaultEcommerceId": "ECOMMERCE"
+        },
+        "qawp": {
+          "Username": "qawp",
+          "Password": "1dT@12345",
+          "ServiceId": "6",
+          "MerchantId": "7737777",
+          "MerchantIdDefaultValue": "9854714",
+          "CurrencyId": "840",
+          "processorId": "7",
+          "respprocessorid": "7",
+          "responseCode": "000",
+          "Cvv": "555",
+          "DefaultEcommerceId": "ECOMMERCE"
+        },
+        "qastripe": {
+          "Username": "qastripe",
+          "Password": "1dT@12345",
+          "ServiceId": "6",
+          "MerchantId": "7738888",
+          "MerchantImmediately": "STRIPETEST",
+          "CurrencyId": "840",
+          "processorId": "8",
+          "respprocessorid": "8",
+          "responseCode": "000",
+          "Cvv": "555",
+          "DefaultEcommerceId": "ECOMMERCE"
+        },
+        "ipay_auto_api": {
+          "Username": "ipay_auto_api",
+          "Password": "1dT@12345678901",
+          "ServiceId": "6",
+          "MerchantId": "7738887",
+          "CurrencyId": "840",
+          "processorId": "8",
+          "respprocessorid": "8",
+          "responseCode": "000",
+          "Cvv": "555",
+          "DefaultEcommerceId": "ECOMMERCE"
+        },
+        "ipay_auto_api_user": {
+          "Username": "ipay_auto_api_user",
+          "Password": "1dT@12345678901",
+          "comment":"use to update in user collection"
+        },
+        "pmvg1_a2g": {
+          "Username": "pmvg1_a2g-9001",
+          "Password": "123",
+          "ServiceId": "9001",
+          "MerchantId": "7728839",
+          "CurrencyId": "840"
+        },
+        "pmvg2_idtexp": {
+          "Username": "pmvg2_idtexp-9002",
+          "Password": "123",
+          "ServiceId": "9002",
+          "MerchantId": "7721710",
+          "CurrencyId": "840"
+        },
+        "pmvg3_n2pptca": {
+          "Username": "pmvg3_n2pptca-9003",
+          "Password": "123",
+          "ServiceId": "9003",
+          "MerchantId": "7703914",
+          "CurrencyId": "124"
+        },
+        "pmvg4_webphone": {
+          "Username": "pmvg4_webphone-9004",
+          "Password": "123",
+          "ServiceId": "9004",
+          "MerchantId": "7703914",
+          "CurrencyId": "840"
+        },
+        "pmvg4_voiceline": {
+          "Username": "pmvg4_voiceline-9004",
+          "Password": "123",
+          "ServiceId": "9004",
+          "MerchantId": "7719877",
+          "CurrencyId": "840"
+        }
+      }
+    ],
+    "rest": {
+      "ipayaws": "https://ipay.awsqa.idt.net:8080",
+      "tokenizerPublic": "https://ipaytok.awsqa.idt.net",
+      "tokenizerPrivate": "https://ipaytok-priv.awsqa.idt.net",
+      "tokenizerPIIPrivate": "https://ipaytok-priv-pii.awsqa.idt.net",
+      "overridesReportV3": "https://ipaytok.awsqa.idt.net/bindb/overridesReportV3",
+      "idt_tokenizationPrivSecret": "https://tokenization-prv-srv.awsqa.idt.net/secrets",
+      "idt_tokenizationPublic": "https://tokenization-srv.awsqa.idt.net/storage",
+      "idt_tokenizationPrivate": "https://tokenization-prv-srv.awsqa.idt.net/storage",
+      "idt_authentication": "https://ipay.awsqa.idt.net:8080/auth",
+      "idt_settle": "https://ipay.awsqa.idt.net:8080/yp/settle/run",
+      "ipay_arn": "https://ipay.awsqa.idt.net:8080/yp/updateARN",
+      "ipay_change_status": "https://ipay.awsqa.idt.net:8080/yp/settle/xipay",
+      "ipay_switch_processor": "https://ipay.awsqa.idt.net:8080/yp/switchProcessor",
+      "ipay_trans_track": "https://ipay.awsqa.idt.net:8080/transactions/TrackTransaction",
+      "ipay_track_transaction": "https://ipay.awsqa.idt.net:8080/transactions/TrackTransaction?TransactionId=%s",
+      "ipay_transaction": "https://ipay.awsqa.idt.net:8080/transactions",
+      "ipay_trans_search": "https://ipay.awsqa.idt.net:8080/transactions/search",
+      "ipay_ach_transaction_reverse": "https://ipay.awsqa.idt.net:8080/ach-settlement/transactionReverse?id=",
+      "ipay_estimate_deposit_date": "https://ipay.awsqa.idt.net:8080/ach-settlement/estimate-deposit-date",
+      "ipay_trans_processCCpayment": "https://ipay.awsqa.idt.net:8080/transactions/ProcessCCPayment",
+      "ipay_trans_processELCheckpayment": "https://ipay.awsqa.idt.net:8080/transactions/ProcessELCheck",
+      "ipay_trans_reset_idempotency": "https://ipay.awsqa.idt.net:8080/transactions/ResetIdempotency",
+      "ipay_trans_process_terminal_payment": "https://ipay.awsqa.idt.net:8080/transactions/ProcessTerminalPayment",
+      "reverse_transaction": "https://ipay.awsqa.idt.net:8080/transactions/ReverseTransaction",
+      "ipay_trans_processCreditCard": "https://ipay.awsqa.idt.net:8080/transactions/ProcessCreditCard",
+      "ipay_vault_by_handle": "https://ipay.awsqa.idt.net:8080/vault/payinfo",
+      "ipay_bin_by_handle": "https://ipay.awsqa.idt.net:8080/vault/binbyhandle",
+      "blacklist_put": "https://ipay.awsqa.idt.net:8080/vault/blacklist/put",
+      "blacklist_search": "https://ipay.awsqa.idt.net:8080/vault/blacklist/search",
+      "stripe_webhook_event_update": "https://ipay.awsqa.idt.net:8080/stripe/events",
+      "ipay_process_wallet_pay": "https://ipay.awsqa.idt.net:8080/transactions/ProcessWalletPayment",
+      "ipay_process_redirect_pay": "https://ipay.awsqa.idt.net:8080/transactions/ProcessRedirectPayment",
+      "tabapay_cardinfo": "https://ipay.awsqa.idt.net:8080/payout/cardinfo",
+      "tabapay_payout_payment": "https://ipay.awsqa.idt.net:8080/transactions/ProcessPayoutPayment",
+      "tabapay_payout": "https://ipay.awsqa.idt.net:8080/transactions/ProcessPayout",
+      "schema_folder": "src/test/resources/schemas/",
+      "lookups_merchant": "https://ipay.awsqa.idt.net:8080/lookups/merchant",
+      "reset_password": "https://ipay.awsqa.idt.net:8080/users/resetPassword",
+      "idtpay_tokenizer_health": "https://ipaytok.awsqa.idt.net/",
+      "yp_detokenizer_health": "https://tokenweb.awsqa.idt.net/",
+      "process_ach_payment": "https://ipay.awsqa.idt.net:8080/transactions/ProcessACHPayment",
+      "process_ach": "https://ipay.awsqa.idt.net:8080/transactions/ProcessACH",
+      "ipay_process_refund": "https://ipay.awsqa.idt.net:8080/transactions/ProcessRefund",
+      "efw_stripe_webhook": "https://ipay.awsqa.idt.net:8080/stripe/qaevents?event=earlyfraudwarning&chargeid=%s&account=acct_1J1HODIlB2oo93fY",
+      "process_sofort": "https://ipay.awsqa.idt.net:8080/transactions/ProcessSofort",
+      "cancel_non_settled_trans": "https://ipay.awsqa.idt.net:8080/transactions/CancelNonSettledTrans",
+      "CHECKOUT.ORDER.APPROVED": "https://ipay.awsqa.idt.net:8080/paypal/events/mock?event=CHECKOUT.ORDER.APPROVED",
+      "ach_settlement_pick_up_pending": "https://ipay.awsqa.idt.net:8080/ach-settlement/pickUpPending",
+      "unlock_test_login_attempts_api_user": "https://ipay.awsqa.idt.net:8080/users/unlock/test_login_attempts_api",
+      "track_transactions": "https://ipay.awsqa.idt.net:8080/transactions/TrackTransaction",
+      "run_background_process": "https://ipay.awsqa.idt.net:8080/transactions/RunBackgroundProcess",
+      "process_boss_rev_wallet_payment": "https://ipay.awsqa.idt.net:8080/transactions/ProcessBossRevWalletPayment",
+      "ipayweb_manage_lookup_tables": "https://ipayweb.awsqa.idt.net/manageLookupTables#merchant",
+      "ipay_audit": "https://ipay.awsqa.idt.net:8080/audit",
+      "payclient_switch_prc": "https://ipayweb.awsqa.idt.net/payclient#SwitchPrc",
+      "payclient_change_status": "https://ipayweb.awsqa.idt.net/payclient#CStatus",
+      "payment_intents": "https://api.stripe.com/v1/payment_intents/"
+    },
+    "idtpaySiteUrl": "https://ipayweb.awsqa.idt.net/",
+    "paymentDataPath": "src/main/resources/paymentInfo_qa.json"
+  },
+  "production": {
+    "Services": {
+      "Vault": "https://ipay.idt.net/payinfo.asmx",
+      "Trans": "https://ipay.idt.net/transactions.asmx"
+    },
+    "CardValidator": {
+      "ServiceUrl": "https://antifraud.idt.net/beast/cardvalidator/CV.svc",
+      "isWrapped": false
+    },
+    "MONGO_DB": {
+      "ServerHost": "idtpayprd1.idt.net:27017,idtpayprd2.idt.net:27017,idtpayprd3.idt.net:27017,idtpayprd4.idt.net:27017,idtpayprd5.idt.net:27017",
+      "Port": "27017",
+      "User": "ipay_ro",
+      "ReplicaSetName": "",
+      "Source": "admin",
+      "DataBaseName": "ipaydb",
+      "Type": "MONGO"
+    },
+    "Users": [
+      {
+        "qa": {
+          "Username": "",
+          "Password": "",
+          "ServiceId": "",
+          "MerchantId": "",
+          "MerchantImmediately": "",
+          "CurrencyId": "840",
+          "processorId": "8",
+          "respprocessorid": "8",
+          "responseCode": "000",
+          "Cvv": "",
+          "DefaultEcommerceId": "TELEPHONE"
+        }
+      }
+    ],
+    "rest": {
+      "settle": "https://ipay.awsqa.idt.net:8080",
+      "tokenizerPublic": "https://ipaytok.awsqa.idt.net",
+      "tokenizerPrivate": "https://ipaytok-priv.awsqa.idt.net",
+      "schema_folder": "src/test/resources/schemas/"
+    },
+    "idtpaySiteUrl": "https://ipayweb.awsqa.idt.net/",
+    "paymentDataPath": "src/main/resources/paymentInfo_prod.json"
+  },
+  "idtpay_dev": {
+    "Services": {
+      "Vault": "https://idtpayqa.awsqa.idt.net:443/payinfo.asmx",
+      "Trans": "https://idtpayqa.awsqa.idt.net:443/transactions.asmx",
+      "Settle": "https://idtpayqa.awsqa.idt.net:443/WebApiSettle.asmx",
+      "WebApi": "https://idtpayqa.awsqa.idt.net:443/WebApiReference"
+    },
+    "VAULT_MVNO_DB": {
+      "ServerHost": "nwk-mvno-dbqa1.corp.idt.net",
+      "Port": "1521",
+      "User": "vault",
+      "Password": "mvnoqa_vault",
+      "ServiceName": "mvnoqa.corp.idt.net",
+      "Type": "ORACLE"
+    },
+    "TRANS_MVNO_DB": {
+      "ServerHost": "nwk-mvno-dbqa1.corp.idt.net",
+      "Port": "1521",
+      "User": "ep",
+      "Password": "mvnoqa_ep",
+      "ServiceName": "mvnoqa.corp.idt.net",
+      "Type": "ORACLE"
+    },
+    "MONGO_DB": {
+      "ServerHost": "lime1.idt.net",
+      "Port": "27017",
+      "User": "auto_frmwrk",
+      "ReplicaSetName": "Lime",
+      "Source": "admin",
+      "DataBaseName": "ipaydb",
+      "Type": "MONGO"
+    },
+    "Users": [
+      {
+        "qa": {
+          "Username": "qa",
+          "Password": "qapass",
+          "ServiceId": "4",
+          "MerchantId": "7725299",
+          "CurrencyId": "840"
+        },
+        "pmvg1_a2g": {
+          "Username": "pmvg1_a2g-9001",
+          "Password": "123",
+          "ServiceId": "9001",
+          "MerchantId": "7728839",
+          "CurrencyId": "840"
+        },
+        "pmvg2_idtexp": {
+          "Username": "pmvg2_idtexp-9002",
+          "Password": "123",
+          "ServiceId": "9002",
+          "MerchantId": "7721710",
+          "CurrencyId": "840"
+        },
+        "pmvg3_n2pptca": {
+          "Username": "pmvg3_n2pptca-9003",
+          "Password": "123",
+          "ServiceId": "9003",
+          "MerchantId": "7703914",
+          "CurrencyId": "124"
+        },
+        "pmvg4_webphone": {
+          "Username": "pmvg4_webphone-9004",
+          "Password": "123",
+          "ServiceId": "9004",
+          "MerchantId": "7703914",
+          "CurrencyId": "840"
+        },
+        "pmvg4_voiceline": {
+          "Username": "pmvg4_voiceline-9004",
+          "Password": "123",
+          "ServiceId": "9004",
+          "MerchantId": "7719877",
+          "CurrencyId": "840"
+        }
+      }
+    ],
+    "rest": {
+      "settle": "http://idtpayqa.awsqa.idt.net:8080",
+      "schema_folder": "src/test/resources/schemas/"
+    }
+  },
+  "dev": {
+    "Services": {
+      "Vault": "https://ipay.awsdev.idt.net:443/payinfo.asmx",
+      "Trans": "https://ipay.awsdev.idt.net:443/transactions.asmx",
+      "Settle": "https://ipay.awsdev.idt.net:443/WebApiSettle.asmx",
+      "WebApi": "https://ipay.awsdev.idt.net:443/WebApiReference"
+    },
+    "VAULT_MVNO_DB": {
+      "ServerHost": "nwk-mvno-dbqa1.corp.idt.net",
+      "Port": "1521",
+      "User": "vault",
+      "Password": "mvnoqa_vault",
+      "ServiceName": "mvnoqa.corp.idt.net",
+      "Type": "ORACLE"
+    },
+    "TRANS_MVNO_DB": {
+      "ServerHost": "nwk-mvno-dbqa1.corp.idt.net",
+      "Port": "1521",
+      "User": "ep",
+      "Password": "mvnoqa_ep",
+      "ServiceName": "mvnoqa.corp.idt.net",
+      "Type": "ORACLE"
+    },
+    "MONGO_DB": {
+      "ServerHost": "kiwi1.idt.net",
+      "Port": "27017",
+      "User": "CN=misqa2,OU=IT-CLIENT,O=IDT,L=Newark,ST=NJ,C=US",
+      "ReplicaSetName": "Kiwi",
+      "Source": "admin",
+      "DataBaseName": "ipaydb",
+      "Type": "MONGO"
+    },
+    "Users": [
+      {
+        "qa": {
+          "Username": "qa",
+          "Password": "qapass",
+          "ServiceId": "4",
+          "MerchantId": "7719896",
+          "CurrencyId": "840"
+        },
+        "pmvg1_a2g": {
+          "Username": "pmvg1_a2g-9001",
+          "Password": "123",
+          "ServiceId": "9001",
+          "MerchantId": "7728839",
+          "CurrencyId": "840"
+        },
+        "pmvg2_idtexp": {
+          "Username": "pmvg2_idtexp-9002",
+          "Password": "123",
+          "ServiceId": "9002",
+          "MerchantId": "7721710",
+          "CurrencyId": "840"
+        },
+        "pmvg3_n2pptca": {
+          "Username": "pmvg3_n2pptca-9003",
+          "Password": "123",
+          "ServiceId": "9003",
+          "MerchantId": "7703914",
+          "CurrencyId": "124"
+        },
+        "pmvg4_webphone": {
+          "Username": "pmvg4_webphone-9004",
+          "Password": "123",
+          "ServiceId": "9004",
+          "MerchantId": "7703914",
+          "CurrencyId": "840"
+        },
+        "pmvg4_voiceline": {
+          "Username": "pmvg4_voiceline-9004",
+          "Password": "123",
+          "ServiceId": "9004",
+          "MerchantId": "7719877",
+          "CurrencyId": "840"
+        }
+      }
+    ],
+    "rest": {
+      "settle": "http://idtpayqa.awsqa.idt.net:8080",
+      "schema_folder": "src/test/resources/schemas/"
+    }
+  },
+  "CardValidator2": {
+    "ServiceUrl": "https://antifraudqa.idt.net/beast/cardvalidator/cv.svc",
+    "isWrapped": false
+  },
+  "Portal": {
+    "BaseUrl": "https://qa01.xipaynet.com/XiPayWeb/Timeout.aspx",
+    "User": "msoliman",
+    "Password": "MyPr0tectedP@$$03"
+  }
+}
