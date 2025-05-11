@@ -8,9 +8,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
-/**
- * Search Result Page definition class.
- */
 public class SearchResultSteps {
     private static final Logger LOGGER = LogManager.getLogger(SearchResultSteps.class.getSimpleName());
     private SearchResultPage searchResultPage;
@@ -19,12 +16,12 @@ public class SearchResultSteps {
         searchResultPage = new SearchResultPage();
     }
 
-    @Given("^I go to Search Result Page by url$")
-    public void iGoToSearchResultPageByUrl() {
-        searchResultPage.goToSearchResultPageByUrl();
+    // Modify step to accept one URL at a time (from the DataProvider)
+    @Given("^I go to Search Result Page by \"([^\"]*)\" url$")
+    public void iGoToSearchResultPageByUrl(final String url) {
+        searchResultPage.goToSearchResultPageByUrl(url);
+        LOGGER.info(String.format("I go to Search Result Page by %s url", url));
     }
-
-
 
     @When("^I open first Vehicle Details Page$")
     public void openFirstVehicleDetailsPage() {
@@ -38,8 +35,6 @@ public class SearchResultSteps {
 
     @Then("^All pagination items should open on Search Result Page$")
     public void allPaginationItemsShouldOpenOnSearchResultPage() {
-
         Assert.assertTrue(searchResultPage.verificationOfAllPaginationItems(), "Pagination is not working correct on Search result page");
-
     }
 }

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="CucumberTestSuite" verbose="1" parallel="false">
-    <test name="AllCucumberTests">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite">
+    <test name="SearchResultTests">
+        <parameter name="baseUrl" value="https://www.example.com" />
         <classes>
-            <class name="net.rml.auto.runner.RunCucumberTest"/>
+            <class name="net.rml.auto.runner.RunCucumberTest" />
         </classes>
     </test>
 </suite>
